@@ -1,0 +1,107 @@
+*{margin: 0; padding: 0;}
+
+body {background-image: url(background3.jpg); background-repeat: no-repeat; background-size: cover}
+	
+}
+
+img{max-width: 100%;}
+
+
+
+
+
+
+
+/*header*/
+
+/*.headSec{
+	padding: 50px 0px;
+	background: #607d8b;
+	
+}
+*/
+
+.header{
+	background-color: #00000073;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: fixed;
+	border: 0.5px solid white;
+}
+
+.name{
+	
+	float: left;
+	color:white;
+	font-family: arial black;
+	margin-left: 20px;
+	text-align: center;
+	widtgh: 500px;
+	overflow: hidden;
+}
+
+
+.home{
+	text-align: right;
+	margin-right: 50px;
+	margin-top: 15px;
+}
+
+
+/*logBox*/
+
+.logSec{
+	widtgh: 100%;
+	padding: 50px 0px;
+	
+	
+}
+
+
+.logBlock{
+	float: left;
+	width: 530px;
+	color: black;
+	padding: 182px;
+	font-size: 20px;
+	margin-left: 500px;
+	margin-top: 133px;
+	overflow: hidden;
+}
+
+
+.tbl{
+	padding: 20px;
+}
+
+
+
+/* .logBlock fp{
+	float: right;
+	margin-left: 200px;
+} */
+
+
+
+
+/*footer*/
+
+.footer{
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	color: white;
+	background-color: black;
+	margin-top: 750px;
+	position: absolute;
+}
+
+
+/* .footerSec{
+	padding: 50px 0px;
+	background: #0000ff00;
+} */
+
