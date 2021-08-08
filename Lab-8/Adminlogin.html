@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/Adminlogin.css" media="screen" />
+
+    <script src="https://kit.fontawesome.com/96c06ef8e8.js" crossorigin="anonymous"></script>
+
+    <title> Tuition/Tutor Care </title>
+
+</head>
+
+
+<body>
+
+
+    <div class="header">
+
+
+<span class="name">
+            <font color="#32174d" size="7"> Tuition/Tutor Care</font>
+            </p>
+        </span>
+
+        <p class="home">
+            <a href="1 home.html">
+                <font color="#00ff00" size="5">&#8918;HOME
+            </a>
+        </p>
+        </font>
+
+
+
+
+        
+
+    </div>
+
+
+    <!-- login -->
+
+    <section class="logSec">
+        <div class="logBlock">
+            <fieldset>
+                <font color="black">
+                    <legend><b>LOGIN</b></legend>
+                </font>
+                <form action="Adminlogin.php" name="login" onsubmit="return validateForm()" method="POST">
+                    <table class="tbl">
+                        <font color="black">
+                            <tr>
+                                <td>
+                                    <font color="black">User Name</font>
+                                </td>
+                                <td>:</td>
+                                <td><input type="text" name="userName"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <font color="black">Password </font>
+                                </td>
+                                <td>:</td>
+                                <td><input type="password" name="password"></td>
+                            </tr>
+                    </table>
+                    <hr />
+                    <input name="remember" type="checkbox">Remember Me
+                    <br /><br />
+                    <input type="submit" name="submit" value="Submit"> </font>
+
+                    <a href="forgetpassword/3forgetpass.html">Forgot Password?</a>
+
+
+                </form>
+            </fieldset>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+
+    <section class="footerSec">
+        <div class="footer">
+            <br />
+            <p align=center><b>Copyright <span>&#169;</span>2021</footer></b></p>
+        </div>
+    </section>
+
+
+    <script>
+        function validateForm() {
+            let username = document.forms["login"]["userName"].value;
+            var pass = document.forms["login"]["password"].value;
+            var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+            var c = 0;
+            if (username == "" && pass == "") {
+                alert("Fillup all data");
+                return false;
+            } else if (document.forms["login"]["password"].value.length < 5) {
+                alert("Pass less then 5");
+                return false;
+            } else {
+                if (strongRegex.test(pass)) {
+                    return true;
+                }
+                else {
+
+                    alert("least");
+                    return false;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

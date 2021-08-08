@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact.css" media="screen"/>
+    <title>Dashboard Page</title>
+</head>
+
+<body>
+    
+
+
+             <div class="header">
+                <p class="home" >
+              <a href="1 home.html"><font color="#00ff00" size="5">&#8918;HOME</a></p></font>
+                
+                
+                
+                
+                <span class="name">  <font color="#32174d" size="8"> Tuition/Tutor Care</font></p> </span>
+                
+</div>
+
+<section class="contSec">
+
+<div  class="contBox">
+
+            <fieldset style="width: 40%" >
+              
+            <legend><font size="5"><b>Contact With Us</b></legend></font>
+    <p align="center"><form name="nl" action="contact.php" onsubmit="return validateForm()" method="post">
+
+        <table><td>User Name</td>
+                <td>:</td>
+                <td><input type="text" name="Name"></td>
+           
+            <tr><td colspan="5"><hr/></td></tr>
+            <tr>
+                <td>E-mail</td>
+                <td>:</td>
+                <td><input type="text" name="Email"></td>
+            </tr>
+            <tr><td colspan="5"><hr/></td></tr>
+            <tr>
+                <td>Subject</td>
+                <td>:</td>
+                <td><input type="text" name="Subject"></td>
+            </tr>
+            <tr><td colspan="5"><hr/></td></tr>
+                <td>Comments</td>
+                <td>:</td>
+                
+                <td><textarea name="comment" rows="4" cols="50"></textarea></td>
+        </table>
+
+        <br/><br/>
+        <input type="submit" name="submit" value="Submit">
+    </form> <hr/>
+    <img width="30" height="30" src="6.jpg"> <b>&nbsp;&nbsp;https://www.facebook.com/tutor/tuitioncare/</b><br>
+    <img width="30" height="30" src="7.jpg"> <b>&nbsp;&nbsp;https://www.linkedin.com/in/tutor/tuitioncare/</b><br>
+    <img width="30" height="30" src="8.jpg"> <b>&nbsp;&nbsp;tutortuition@gmail.com</b><br>
+    <img width="30" height="30" src="9.jpg"> <b>&nbsp;&nbsp;+8801772345678</b>
+ 
+          </fieldset></p>
+
+
+      </div>
+
+  </section>
+ 
+
+
+   
+
+   
+    
+
+<section class="footerSec">
+<div class="footer">
+<br/>
+<p align=center><b>Copyright <span>&#169;</span>2021</footer></b></p>
+</div>
+</section>
+
+<script>
+    function validateForm() {
+        let username = document.forms["nl"]["Name"].value;
+        let email = document.forms["nl"]["Email"].value;
+        let suj = document.forms["nl"]["Subject"].value;
+        let comnt = document.forms["nl"]["comment"].value;
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var c = 0;
+        if (username == "" && email == "" && suj == "" && comnt == "") {
+            alert("Fillup all data");
+            return false;
+        } else {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+            return true;
+            }
+            else{
+                
+            alert("Pass less then 5");
+            return false;
+            }
+        }
+    }
+</script>
+</body>
